@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env/
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Gradio / ChromaDB
+*.db
+data/chroma/
+
+# 系統檔
+.DS_Store
