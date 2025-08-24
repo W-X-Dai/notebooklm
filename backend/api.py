@@ -32,22 +32,22 @@ def ollama_generation(prompt, model="gpt-oss:latest"):
     else:
         raise Exception(f"Error {response.status_code}: {response.text}")
     
-def ollama_embedding(text, model="nomic-embed-text"):
+def ollama_embedding(text, model="nomic-embed-text:v1.5"):
     """
     Get text embedding using Ollama API
     """
-    url = f"{OLLAMA_API_URL}/api/embedding"
+    url = f"{OLLAMA_API_URL}/api/embed"
 
     headers = {"Content-Type": "application/json"}
     payload = {
         "model": model,
-        "text": text
+        "input": text
     }
     
     response = requests.post(url, headers=headers, data=json.dumps(payload))
     
     if response.status_code == 200:
         result = response.json()
-        return result.get("embedding", [])
+        return result.get("embeddings", [])
     else:
         raise Exception(f"Error {response.status_code}: {response.text}")
