@@ -3,18 +3,29 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.egg-info/
+.env
+.venv
+*.log
 
-# Virtual env
-venv/
-.env/
+# Gradio / output
+out/
+*.wav
+*.mp3
 
-# VSCode / PyCharm
-.vscode/
-.idea/
+# PDF / dataset
+*.pdf
+data/
+datasets/
 
-# Gradio / ChromaDB
-*.db
-data/chroma/
+# Hugging Face / Model weights
+VibeVoice-1.5B/
+*.safetensors
+*.bin
+*.pt
 
-# 系統檔
+VibeVoice/
+
+# Others
 .DS_Store
+.vscode/

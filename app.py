@@ -20,7 +20,7 @@ def extract_text_from_pdf(pdf_file):
 def upload_pdf(pdf_file):
     """處理 PDF 上傳，抽取文字並存入 DB"""
     if pdf_file is None:
-        return "⚠️ 請先選擇 PDF"
+        return "請先選擇 PDF"
 
     text = extract_text_from_pdf(pdf_file)
 
@@ -30,7 +30,7 @@ def upload_pdf(pdf_file):
     # 存到 DB（id 用檔名）
     db.add_document(pdf_file.name, text, emb)
 
-    return f"✅ 已成功加入資料庫: {pdf_file.name}"
+    return f"已成功加入資料庫: {pdf_file.name}"
 
 
 def chat(query, history):
