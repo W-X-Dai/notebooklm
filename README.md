@@ -30,3 +30,9 @@
     ```bash
     pip install -r requirements.txt
     ```
+
+## 銘謝
+
+特別感謝 ChatGPT 協助我完成了這個專案，這是我第一次開發這麼大的專案，從一開始的架構設計、程式碼撰寫、錯誤排除、文件撰寫，ChatGPT 都給了我很大的幫助，讓我能夠順利完成這個專案。
+
+如果有任何需求都可以提出 issue 或 PR，或是寄[email](mailto:joshdai930908@gmail.com)給我，我會盡力協助。
